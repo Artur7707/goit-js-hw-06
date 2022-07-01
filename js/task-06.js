@@ -13,6 +13,7 @@ inputRef.addEventListener("blur", (event) => {
 
   if (value.length !== Number(dataset.length)) {
     event.currentTarget.classList.add("invalid");
+    event.currentTarget.classList.remove("valid");
     return;
   }
   event.currentTarget.classList.remove("invalid");
